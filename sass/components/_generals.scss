@@ -15,3 +15,21 @@
 .unstyled-list {
     list-style: none;
 }
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+.terms svg {
+    position: static;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-side-style {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    fill: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

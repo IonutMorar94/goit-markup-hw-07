@@ -20,7 +20,7 @@ body {
     text-decoration: none;
 }
 
-.first-logo {
+.first__style {
     color: #2196F3
 }
 
@@ -75,18 +75,6 @@ body {
 .navigation-block__link-style:hover {
     fill: #2196F3;
     color: #2196F3;
-}
-
-
-.navigation-block__link-style {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-style: normal;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons__active {
@@ -706,7 +694,7 @@ footer {
     margin-top: 40px;
 }
 
-.submit-button-style {
+.modal-button__style {
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -771,7 +759,7 @@ footer {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-position {
+.modal-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -793,7 +781,7 @@ footer {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check-box {
+.checkbox {
     padding-top: 20px;
     display: flex;
     justify-content: center;
@@ -805,14 +793,14 @@ footer {
     letter-spacing: 0.03em;
 }
 
-.replace-checkbox {
+.checkbox__replace {
     width: 16px;
     height: 15px;
     border: 1px solid black;
     border-radius: 2px;
 }
 
-.modal-form input[type="checkbox"]:checked+.replace-checkbox {
+.modal-form input[type="checkbox"]:checked+.checkbox__replace {
     background: #2196F3;
     border-color: #2196F3;
 }
@@ -825,27 +813,19 @@ footer {
     justify-content: center;
 }
 
-.modal-form input[type="checkbox"]:checked+.replace-checkbox svg {
+.modal-form input[type="checkbox"]:checked+.checkbox__replace svg {
     background: #2196F3;
     border-color: #2196F3;
     opacity: 1;
     fill: white;
 }
 
-.checkbox-hide {
+.checkbox__hide {
     display: none;
 }
 
-.terms-blue-style {
+.checkbox__terms-style {
     color: #2196F3;
-}
-
-.checkbox-text {
-    padding-left: 8px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
 }
 
 .newsletter {
