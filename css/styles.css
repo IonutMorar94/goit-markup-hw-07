@@ -24,6 +24,11 @@ body {
     color: #2196F3
 }
 
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
 .address__logo {
     font-style: normal;
     font-weight: 700;
@@ -77,6 +82,17 @@ body {
     color: #2196F3;
 }
 
+.navigation-block__link-style {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .buttons__active {
     background: #F5F4FA;
     border-radius: 4px;
@@ -106,6 +122,16 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    margin: 20px 24px 0px 24px;
+}
+
+.card__text-overlay {
+    padding-top: 70px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .card__text {
@@ -114,9 +140,10 @@ body {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 4px 24px 20px 24px;
 }
 
-footer {
+.footer-section {
     background: #2F303A;
 }
 
@@ -133,6 +160,8 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
 }
 
 /* Tema, Portofolio Styles*/
@@ -198,25 +227,6 @@ footer {
     display: flex;
 }
 
-.projects-list {
-    gap: 30px;
-    justify-content: space-between;
-}
-
-
-.projects-list li h3 {
-    margin: 20px 24px 0px 24px;
-}
-
-.projects-list li p {
-    margin: 4px 24px 20px 24px;
-}
-
-.projects-list li {
-    display: flex;
-    flex-direction: column;
-}
-
 .card__border {
     box-sizing: border-box;
     background: #FFFFFF;
@@ -224,7 +234,6 @@ footer {
     border-top: 0;
     padding-top: 0;
     z-index: 1;
-
 }
 
 /* Footer Section*/
@@ -256,7 +265,7 @@ footer {
     padding-bottom: 20px;
 }
 
-.footer-vect__pic {
+.vectorial-pic {
     display: flex;
     gap: 10px;
 }
@@ -268,19 +277,9 @@ footer {
     height: 80px;
 }
 
-.address {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Studio Style*/
 .efective-section {
     height: 600px;
-    display: flex;
-    justify-content: center;
-}
-
-.efective-section {
     image-resolution: inherit;
     background-size: cover;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.1)),
@@ -308,7 +307,7 @@ footer {
     color: #FFFFFF;
 }
 
-.request-button {
+.efective-section__request-button {
     border: none;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -338,11 +337,11 @@ footer {
     justify-content: space-around;
 }
 
-.abilities-grid li {
+.abilities {
     width: 270px;
 }
 
-.abilities-grid li h3 {
+.abilities__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -351,7 +350,7 @@ footer {
     color: #212121;
 }
 
-.abilities li p {
+.abilities__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -370,7 +369,7 @@ footer {
     flex-direction: column;
 }
 
-.what-we-do-section-grid {
+.work-grid {
     display: flex;
     gap: 30px;
     justify-content: space-around;
@@ -399,27 +398,27 @@ footer {
     margin-bottom: 50px;
 }
 
-.our-team-photo-grid {
+.team {
     display: flex;
     gap: 30px;
     justify-content: space-around;
 }
 
-.our-team-photo-grid li h3 {
+.team__name {
     display: flex;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.our-team-photo-grid li p {
+.team__accupation {
     display: flex;
     justify-content: center;
     color: #757575;
 }
 
 /* Tema 4*/
-.abilities-section__vector li {
+.abilities-section__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,7 +448,7 @@ footer {
     margin-top: 16px;
 }
 
-.team-vectorials-grid li a {
+.team-vectorials-grid__svg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,7 +459,7 @@ footer {
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-vectorials li a:hover {
+.team-vectorials-grid__svg:hover {
     fill: white;
     background: #2196F3;
     border-radius: 50%;
@@ -469,7 +468,7 @@ footer {
     align-items: center;
 }
 
-.footer-vect__color {
+.vectorial-pic__color {
     fill: white;
 }
 
@@ -491,7 +490,7 @@ footer {
     gap: 30px;
 }
 
-.costumer-logo li {
+.costumer-logo__item {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -502,27 +501,27 @@ footer {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.costumer-logo li a svg {
+.costumer-logo__svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.costumer-logo li a svg:hover {
+.costumer-logo__svg:hover {
     fill: #2196F3;
 }
 
-.costumer-logo li:hover {
+.costumer-logo__item:hover {
     border-color: #2196F3;
 }
 
-.regular-costumer-container h2 {
+.regular-costumer-section__title {
     padding-bottom: 50px;
 }
 
-.costumer-logo li a {
+.costumer-logo__link {
     fill: #AFB1B8;
 }
 
-.our-team-photo-grid__item {
+.team__item {
     width: 270px;
     left: 515px;
     top: 1785px;
@@ -531,18 +530,16 @@ footer {
     border-radius: 0px 0px 4px 4px;
 }
 
-.projects-list li {
-    transition: box-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.projects-list li:hover {
+
+.card:hover {
     cursor: pointer;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.footer-vect__pic li a {
+.vectorial-pic__svg {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -552,7 +549,7 @@ footer {
     align-items: center;
 }
 
-.footer-vect__pic li a:hover {
+.vectorial-pic__svg:hover {
     width: 44px;
     height: 44px;
     background: #2196F3;
@@ -564,7 +561,7 @@ footer {
 }
 
 /* tema 5*/
-.what-we-do-section-grid__description {
+.work-grid__description {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -582,7 +579,7 @@ footer {
     bottom: 4px;
 }
 
-.what-we-do-section-grid li {
+.work-grid__item {
     position: relative;
 }
 
@@ -610,9 +607,12 @@ footer {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     position: relative;
     height: 404px;
+    transition: box-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card__overlay {
@@ -624,16 +624,7 @@ footer {
     transition: transform 250ms linear;
 }
 
-.card__text {
-    padding-top: 70px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
-.projects-list li:hover .card__overlay {
+.card:hover .card__overlay {
     transform: translateY(0px);
 }
 
